@@ -22,3 +22,6 @@ function isBiggerThan8(element, index, array) {
 }
 console.log(numbers.some(isBiggerThan8));
 console.log(names.some(isBiggerThan8));
+
+const mystring = "ich bin ein bär und habe hunger";
+console.log("incl test in string: " + mystring.includes("eis"));

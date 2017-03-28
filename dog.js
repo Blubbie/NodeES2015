@@ -1,11 +1,11 @@
 // THIS, SELF, THUS, THAT.....and all that stuff
 const externalBark =  function () {  
 		// this ist hier eigentlich ein versteckter parameter..
-		console.log("Wuff wuff... " + this.name);
+		console.log("Wuff wuff... " + this.firstName);
 	}
 
 const dog = {
-	name: "Joey",
+	firstName: "Joey",
 	bark: externalBark
 };
 
@@ -23,10 +23,15 @@ externalBark(); // wuff wuff undefined
 // theFunction.call(valueForThis, arg1, arg2, ...)
 
 const dave = {
-	name: "Dave"
+	firstName: "Dave",
+	eisessen: () => console.log(" ja jetzt EIS!!!!"),
+	eisessen2: function() {console.log(" ja jetzt EIS!!!!") }
 }
 externalBark.call(dog);
 externalBark.apply(dave);
+
+//dave.eisessen2();
+externalBark.apply(dave.eisessen2);
 // Lisp ist der ursprung von JAvascript und nicht java oder c
 
 

@@ -1,0 +1,19 @@
+{
+  "name": "node_es2015_experiments",
+  "version": "0.0.2",
+  "description": "some es2015 experiments and examples",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blubbie/NodeES2015.git"
+  },
+  "author": "Henry Münster",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Blubbie/NodeES2015/issues"
+  },
+  "homepage": "https://github.com/Blubbie/NodeES2015#readme"
+}

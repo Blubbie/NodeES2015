@@ -20,6 +20,7 @@ console.log(rest); // [5,7,11]
 
 const person = {
 	firstName: "Steve",
+	katze: "Vivi",
 	middleName: "Paul",
 	lastName: "Jobs"
 };
@@ -36,10 +37,11 @@ const person2 = {
 // new: kurzschreiweise, definere neue variablen firstName und lastName
 // ziehe dabei die Werte dafür aus dem Objekt person
 // wenn lastName nicht definiet ist, wird dieser mit Balmer besetzt
-const { firstName, lastName = "Balmer"} = person;
+const { firstName, lastName = "Balmer", katze = "whisky"} = person;
 // wenn middleName2 nicht definiet ist, wird dieser mit Homer besetzt
 const { firstName2, middleName2 = "Homer", lastName2} = person2;
 
+console.log(katze);
 console.log(firstName);
 console.log(lastName);
 

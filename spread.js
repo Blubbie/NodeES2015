@@ -5,6 +5,7 @@ const numbers = [1,2,3,4,5];
 const sumDefault = function (a,b,c,d,e) {
 	return a+b+c+d+e;
 }
+
 console.log(sumDefault(numbers[0],numbers[1],numbers[2],numbers[3],numbers[4]));
 // hier werden nicht n-Parameter übergeben sondern mit spread operator das Array
 // aufgeteilt in einzelne Parameter
